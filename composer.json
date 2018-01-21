@@ -10,7 +10,8 @@
     "require": {
         "doctrine/orm": "^2.5",
         "php": ">=7.0",
-        "gedmo/doctrine-extensions": "^2.4"
+        "gedmo/doctrine-extensions": "^2.4",
+        "vlucas/phpdotenv": "^2.4"
     },
     "test": "phpunit test",
     "require-dev": {
