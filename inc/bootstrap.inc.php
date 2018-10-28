@@ -21,7 +21,7 @@ $config['db']         = [
 /**
  * APPLICATION OPTIONS
  */
-$config['options']['debug_mode'] = true;
+$config['options']['debug_mode'] = getenv('APP_DEBUG');
 
 $database = new \Configuration\GedmoDatabase($config['db'], $loader, $config['entity_dir']);
 $database->addLoggable(null);

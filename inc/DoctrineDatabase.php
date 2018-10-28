@@ -138,7 +138,7 @@ class DoctrineDatabase  extends Database {
 	public function getDoctrineConfig(): Configuration {
 		if (!$this->doctrineConfig) {
 			$configDoctrine = new Configuration();
-			$configDoctrine->setProxyDir(sys_get_temp_dir());
+			$configDoctrine->setProxyDir(sys_get_temp_dir() . '/doctrine');
 			$configDoctrine->setProxyNamespace('Proxy');
 			$configDoctrine->setAutoGenerateProxyClasses(false);
 			$configDoctrine->setMetadataDriverImpl($this->getDriverChain());

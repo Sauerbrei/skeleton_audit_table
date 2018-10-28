@@ -8,11 +8,8 @@
  */
 namespace Traits\Database;
 
-use Doctrine\DBAL\Logging\EchoSQLLogger;
 use Doctrine\ORM\EntityManager;
-use Doctrine\ORM\ORMInvalidArgumentException;
 use Entities\Audit;
-use PHPUnit\Framework\Exception;
 
 
 trait Auditable {
